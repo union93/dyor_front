@@ -1,6 +1,9 @@
 import 'dart:math';
+import 'package:dyor_front/controller/coinListController.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:dyor_front/simple_animations_package.dart';
+import 'package:syncfusion_flutter_datagrid/datagrid.dart';
 
 void main() => runApp(ParticleApp());
 
@@ -160,11 +163,48 @@ class CenteredText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Text(
-        "Welcome to DYOR",
-        style: TextStyle(color: Colors.white, fontWeight: FontWeight.w200),
-        textScaleFactor: 4,
-      ),
+      child: Container(
+        child:Column(
+          children: [
+            Padding(
+                padding:EdgeInsets.all(50),
+                child:Text(
+                    "DYOR",
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 40,
+                        color: Colors.white.withOpacity(0.8)
+                    ),
+                )
+            ),
+            Padding(
+                padding: EdgeInsets.all(50),
+                child: SizedBox(
+                  width: 550,
+                  child: TextField(
+                    decoration: InputDecoration(
+                      prefixIcon: Icon(Icons.search_rounded),
+                      hintText: 'Search Defi Pair Infomation here',
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(30),
+                      ),
+                      filled: true,
+                      fillColor: Colors.white,
+                    ),
+                  ),
+                )
+            ),
+            Padding(
+              padding: EdgeInsets.all(40),
+              child: FutureBuilder(
+
+
+              ),
+            )
+          ],
+
+        )
+      )
     );
   }
 }

@@ -13,7 +13,7 @@ import 'package:dyor_front/main.dart';
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(dyorApp());
+    await tester.pumpWidget(ParticleApp());
 
     // Verify that our counter starts at 0.
     expect(find.text('0'), findsOneWidget);
