@@ -32,6 +32,7 @@ dependencies:
   draw_graph: ^1.0.0
   syncfusion_flutter_datagrid: ^19.2.48-beta
   intl: ^0.17.0
+  json_table: ^2.0.1
 
 dev_dependencies:
   flutter_test:
