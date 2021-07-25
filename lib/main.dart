@@ -161,7 +161,7 @@ class CenteredText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Text(
-        "Welcome to Flutter for web",
+        "Welcome to DYOR",
         style: TextStyle(color: Colors.white, fontWeight: FontWeight.w200),
         textScaleFactor: 4,
       ),
